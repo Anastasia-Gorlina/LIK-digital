@@ -19,10 +19,9 @@
     margin-top: 30px;
   }
   .circle {
-    width: 43px;
-    height: 43px;
+    width: 32px;
+    height: 32px;
     background-color: #004085;
-    margin-right: 10px;
     color: aliceblue;
     border-radius: 50%;
     display: flex;
@@ -36,7 +35,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: clamp(1em, 3vw, 2em); 
-    gap: 12px;
+    gap: 4px;
     font-weight: 500;
     border: 2px solid #fe722b;
     border-radius: 20px;
@@ -99,10 +98,14 @@
     .circle {
       width: 50px; /* Размер круга */
       height: 50px; /* Размер круга */
+      margin-right: 10px;
   }
     .section_grade-contents {
       flex-direction: column;
       justify-content: space-between;
+    }
+    .section_grade-content {
+      gap: 12px;
     }
     .section_grade {
         padding-bottom: 150px;
