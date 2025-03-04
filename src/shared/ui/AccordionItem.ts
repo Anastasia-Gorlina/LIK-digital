@@ -3,10 +3,12 @@ export class AccordionItem extends HTMLElement {
   private content: HTMLElement;
   private isOpen: boolean = false;
 
-  constructor() {
+  constructor(header: HTMLElement, content: HTMLElement) {
     super();
     this.attachShadow({ mode: 'open' });
     this.render();
+    this.header = header;
+    this.content = content;
   }
 
   connectedCallback() {
