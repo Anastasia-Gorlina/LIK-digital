@@ -1,0 +1,254 @@
+.section_program {
+  background-image: url('../image/background/background_cerkov.png');
+  background-size: 40%; /* Заполняет весь блок, сохраняя пропорции */
+  background-position: right center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Запрещает повторение изображения */
+}
+
+.program {
+  padding: 0 clamp(16px, 5vw, 150px);
+  min-height: calc(100vh - 97px);
+}
+
+/*Первый блок программы*/
+
+.program_days {
+  max-width: 100%;
+  padding-top: clamp(32px, 5vw, 64px);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-left: 15%;
+  margin-top: 80px;
+  background-image: url('../image/icon/icon_line_bold.png');
+  background-size: contain; /* Заполняет весь блок, сохраняя пропорции */
+  background-position: left bottom; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Запрещает повторение изображения */
+}
+
+.program_day {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.day_one {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 390px;
+}
+
+.day_two {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: -40px;
+}
+
+.day_two-paragraph {
+  margin-left: 110px;
+}
+
+.day_three {
+  margin-top: 150px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.program_day-title {
+  color: var(--color-yellow);
+  font-weight: 500;
+  font-size: clamp(14px, 5vw, 18px);
+}
+
+/*Второй блок программы*/
+.section_program-twoBlocks {
+  background-image: url('../image/background/background_vera.png');
+  background-size: 50%; /* Заполняет весь блок, сохраняя пропорции */
+  background-position: left center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Запрещает повторение изображения */
+}
+
+.program-twoBlock {
+}
+
+.program-twoBlocks-list {
+  display: grid;
+  gap: clamp(16px, 5vw, 64px);
+  padding-top: clamp(32px, 5vw, 64px);
+}
+
+.program-twoBlocks-text {
+  background-color: #222222;
+  padding: 0 clamp(16px, 5vw, 32px) clamp(16px, 5vw, 32px);
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  p {
+    line-height: 1.4;
+    font-size: clamp(14px, 5vw, 24px);
+  }
+}
+
+/*Третий блок программы*/
+
+.section_program-threeBlocks {
+  background-image: url('../image/background/background_vera.png');
+  background-size: 50%; /* Заполняет весь блок, сохраняя пропорции */
+  background-position: center right; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Запрещает повторение изображения */
+}
+.program-threeBlocks {
+}
+
+.program_Days {
+  margin-top: clamp(16px, 5vw, 64px);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.program_Days_card {
+  min-height: 140px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 64px;
+}
+
+.program_Days_card-day {
+  width: 40px;
+  height: 100%;
+  border: 1px solid var(--color-yellow);
+  padding: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: var(--color-black);
+  transition: all 0.4s ease;
+  cursor: default;
+  &:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+  }
+}
+
+.transform_text {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  font-size: clamp(24px, 5vw, 32px);
+}
+
+.program_Days_card-text {
+  flex: 1;
+  min-width: 1300px;
+  height: 100%;
+  background-color: #222222;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.program_days-timeText {
+  display: flex;
+  gap: 16px;
+  p:first-child {
+    font-weight: 700;
+    color: var(--color-yellow);
+  }
+
+  p {
+    font-size: clamp(14px, 5vw, 22px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .program_days {
+    padding-top: 0;
+    margin-top: 50px;
+    margin-left: 0;
+    background-image: url('../image/icon/icon_line_vertical.png');
+    background-size: contain; /* Заполняет весь блок, сохраняя пропорции */
+    background-position: left; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+  }
+  .day_one {
+    margin-left: 10px;
+  }
+
+  .day_two {
+    margin-left: 10px;
+  }
+  .day_two-paragraph {
+    margin-left: 0;
+  }
+  .day_three {
+    margin-top: 0;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .program {
+    margin-top: 60px;
+    min-height: calc(100vh - 200px);
+  }
+  .program_days {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .program-twoBlocks-text {
+    p {
+      line-height: 1.4;
+      font-weight: 200;
+      font-size: 14px;
+    }
+  }
+
+  .program_days-timeText {
+    gap: 4px;
+    p:nth-child(2) {
+      font-weight: 200;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 1524px) {
+  .program_Days_card-text {
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .program_Days_card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .transform_text {
+    transform: rotate(0);
+  }
+  .program_Days_card-day {
+    width: 140px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .program_days-timeText {
+    flex-direction: column;
+  }
+}

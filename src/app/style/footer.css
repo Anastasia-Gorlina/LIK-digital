@@ -1,0 +1,81 @@
+.footer {
+  background-image: url('../image/background/background_gradient.png');  
+  background-size: cover; /* Заполняет весь блок, сохраняя пропорции */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Запрещает повторение изображения */
+  padding: 20px; /* Добавляем отступы для мобильных устройств */
+  min-height: 162px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+  border-top: 1px solid #ffffff80;
+  padding: 32px clamp(16px, 5vw, 120px);
+  text-align: left;
+  font-weight: 200;
+}
+
+.footer_title {
+  font-size: clamp(24px, 5vw, 44px);
+  font-weight: 600;
+  color: #004085;
+}
+
+.footer_contacts {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 8px;
+  background-color: rgba(255, 250, 250, 0.5);
+  padding: 25px;
+  border-radius: 20px;
+}
+.footer_contacts label {
+  font-size: 14px;
+  color: #333;
+}
+.footer_contact {
+  font-size: clamp(14px, 5vw, 22px);
+  cursor: pointer;
+  color: var(--color-white);
+}
+.footer_contacts input {
+  border: none;
+  border-bottom: 1px solid #004085;
+  background-color: rgba(255, 250, 250, 0);
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer_contacts input::placeholder {
+color: #004085;
+opacity: 1;
+}
+.footer_contacts button {
+  background-color: #004085;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.footer_contacts button:hover {
+  background-color: #ccc;
+}
+@media (max-width: 768px) {
+  .footer {
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+  }
+  .footer_contacts {
+    gap: 8px;
+  }
+
+  .footer_contact {
+    font-size: 14px;
+  }
+}

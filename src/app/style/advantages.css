@@ -1,0 +1,103 @@
+.section_advantages{
+    background-size: 40%; /* Заполняет весь блок, сохраняя пропорции */
+    background-position: right center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+  }
+  
+  .advantages {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .advantages_item {
+    border: 2px solid #fe722b;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    text-align: left;
+  }
+  .advantages_item-left {
+    border-top: 2px solid #fe722b;
+    border-right: 2px solid #fe722b;
+    padding-left: 20px;
+    text-align: center;
+    color: #333;
+    text-align: left;
+  } 
+
+  .advantages_subtitle {
+    font-size: 55px;
+    font-weight: 600;
+    color: #fe722b;
+  }
+  
+  .advantages_group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+    .advantages_title {
+      font-size: clamp(2em, 5vw, 3.5em);
+      font-weight: 600;
+      color: #004085;
+      margin-bottom: 40px;
+      margin-left: 40px;
+      text-align: left;
+    }
+    
+    .advantages_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .advantages_item-text {
+      font-size: 20px;
+      color: #004085;
+    }
+    .advantages_img {
+      max-width: 300px;
+      padding: 20px;
+    }
+    
+    .advantages_list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 0;
+      border-left: none;
+    }
+    
+    .advantages_text {
+      font-size: clamp(1em, 3vw, 2em);
+      font-weight: 500;
+      color: #fe722b;
+      line-height: 1.5;
+    }
+    
+    
+    /* Адаптация для компьютеров */
+    @media (min-width: 768px) {
+      .advantages_content {
+        flex-direction: row;
+        gap: 40px;
+      }
+      .advantages_item {
+        padding: 20px 100px 20px 187px;
+      }
+      .advantages_img {
+          max-width: 400px;
+        padding: 50px;
+      }
+      .advantages_group {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .advantages_list {
+        padding-left: 30px;
+        border-left: 3px solid #004085;
+      }
+    }

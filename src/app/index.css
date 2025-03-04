@@ -1,0 +1,41 @@
+@import './style/style.css';
+@import './style/reset.css';
+@import './style/greeting.css';
+@import './style/footer.css';
+@import './style/program.css';
+@import './style/partner.css';
+@import './style/video.css';
+@import './style/advantages.css';
+@import './style/cultor.css';
+@import './style/grade.css';
+@import './style/matrix.css';
+@import './style/slider.css';
+
+:root {
+  background-color: #ffffff;
+  font-weight: 200;
+  color: #ffffff;
+  --color-white: #ffffff;
+  --color-yellow: #fffbb7;
+  --color-black: #000000;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('style/fonts/Inter-V.ttf') format('truetype');
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-family:
+      Inter,
+      sans-serif;
+  }
+}
+
+body {
+  font-family:
+   Inter,
+    sans-serif;
+  line-height: 1.3;
+}

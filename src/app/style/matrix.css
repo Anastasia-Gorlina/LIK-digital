@@ -1,0 +1,44 @@
+.section_matrix-title {
+    font-size: clamp(1.5em, 4vw, 2.5em);
+    font-weight: 600;
+    color: #004085;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.section_matrix_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.section_matrix-text {
+    font-size: clamp(1em, 3vw, 1.5em);
+    line-height: 1.5;
+    text-align: start;
+    color: #004085;
+}
+.section_matrix-img {
+    width: 100%;
+    max-width: 700px;
+  }
+
+@media (min-width: 768px) {
+    .section_matrix-title {
+        font-size: 3em;
+        font-weight: 600;
+        color: #004085;
+    }
+    .section_matrix_content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .section_matrix-text {
+        line-height: 1.5;
+        max-width: 50%;
+
+    }
+}
