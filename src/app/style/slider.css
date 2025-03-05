@@ -23,35 +23,26 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    gap: 450px;
+    gap: 5px;
     width: 100%;
     margin: 0 auto;
   }
 .slide {
     width: 100%;
   box-sizing: border-box;
-}
+} 
 
 .slide img {
     width: 100%;
     display: block;
 }
 
-
 .controls {
     display: flex;
-    height: 10px;
-    justify-content: space-between;
+    justify-content: center;
     color: #004085;
 }
-.controls label {
-    cursor: pointer;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    color: white;
-    font-size: 1.5em;
-    user-select: none;
-}
+
 
 .arrow {
     cursor: pointer;
@@ -95,13 +86,7 @@
 input[type="radio"] {
     display: none;
 }
-.arrow.prev {
-    left: 10px; /* Стрелка "назад" слева */
-  }
-  
-  .arrow.next {
-    right: 10px; /* Стрелка "вперед" справа */
-  }
+
   
   .navigation {
     position: absolute;
@@ -111,42 +96,34 @@ input[type="radio"] {
   }
   
   .nav-button {
-    width: 8px;
-    height: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
+    background-color: #fe722b;
+    display: inline-block;
+    margin: 0 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Активная навигационная кнопка */
-  #slide1:checked ~ .navigation .nav-button:nth-child(1),
-  #slide2:checked ~ .navigation .nav-button:nth-child(2),
-  #slide3:checked ~ .navigation .nav-button:nth-child(3),
-  #slide4:checked ~ .navigation .nav-button:nth-child(4),
-  #slide5:checked ~ .navigation .nav-button:nth-child(5) {
-    background-color: #004085;
-  }
-@media (min-width: 768px) {
+    transition: #fe722b 0.3s ease;
+    user-select: none;
+}
 
+input[type="radio"]:checked + label.nav-button {
+    background-color: #004085; 
+}
+
+
+@media (min-width: 768px) {
     .navigation {
         position: absolute;
-        transform: translateX(250%);
+        transform: translateX(200%);
         display: flex;
         gap: 10px;
     }
     .nav-button {
-        width: 12px;
-        height: 12px;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
+      width: 20px;
+      height: 20px;
+    }
+    /* Стили для навигационных кнопок */
     .section_slider {
         padding: 50px;
       }
