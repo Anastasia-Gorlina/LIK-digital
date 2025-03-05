@@ -24,7 +24,7 @@
     flex-direction: column;
     overflow: hidden;
     gap: 450px;
-    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
   }
 .slide {
@@ -151,7 +151,7 @@ input[type="radio"] {
         padding: 50px;
       }
     .slider2 {
-        max-width: 1000px;
+        max-width: 90%;
         overflow: hidden;
     }
     #slide1:checked ~ .slides {
