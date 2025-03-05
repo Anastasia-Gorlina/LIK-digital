@@ -71,6 +71,21 @@
       padding-left: 0;
       border-left: none;
     }
+
+    .advantages_list li {
+      position: relative;
+      padding-left: 25px;
+    }
+    .advantages_list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 15%;
+      width: 8px;
+      height: 8px;
+      background-color: #fe722b;
+      border-radius: 50%;
+    }
     
     .advantages_text {
       font-size: clamp(1em, 3vw, 2em);
@@ -86,6 +101,11 @@
         flex-direction: row;
         gap: 40px;
       }
+      .advantages_list li::before {
+        width: 10px;
+        height: 10px;
+      }
+
       .advantages_item {
         padding: 20px 100px 20px 187px;
       }
