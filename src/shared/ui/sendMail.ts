@@ -8,7 +8,7 @@ type FormData = {
 
 function constructMail(formData: FormData) {
   const subject = 'Запрос на дополнительную консультацию с лендинга ЛиК'; // Тема письма
-  const email = 'example@example.com';
+  const email = 'kulturaPB@gazprom-neft.ru';
   const body = `
     ФИО: ${formData.fio.value}%0D%0A
     Организация: ${formData.company.value}%0D%0A

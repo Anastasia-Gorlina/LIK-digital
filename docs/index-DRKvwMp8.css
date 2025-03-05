@@ -13,7 +13,6 @@ html {
 
 .container {
   padding: 0 clamp(16px, 5vw, 150px);
-  min-height: 100vh
 }
 
 .container_left {
@@ -180,7 +179,7 @@ table {
   background-size: cover; /* Заполняет весь блок, сохраняя пропорции */
   background-position: center; /* Центрирует изображение */
   background-repeat: no-repeat; /* Запрещает повторение изображения */
-  padding: 20px; /* Добавляем отступы для мобильных устройств */
+  /* padding: 20px; Добавляем отступы для мобильных устройств */
 }
 
 .greeting {
@@ -217,7 +216,7 @@ table {
 }
 
 .greeting_title-title {
-  font-size: clamp(32px, 5vw, 4em);
+  font-size: clamp(32px, 5vw, 3.5em);
   font-weight: 600;
   color: var(--color-white);
 }
@@ -298,9 +297,9 @@ table {
   .left-align {
     text-align: left;
   }
-.right-align {
-  text-align: right;
-}
+  .right-align {
+    text-align: right;
+  }
   .greeting_item {
     flex-direction: row;
     gap: 30px;
@@ -326,14 +325,14 @@ table {
   font-size: clamp(1.5em, 5vw, 3.5em); 
   font-weight: 600;
   color: #004085;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: start;
 }
 
 .greeting_contents {
   display: grid;
   grid-template-columns: repeat(1, 1fr); 
-  gap: 40px;
+  gap: 20px;
 
 }
 
@@ -352,6 +351,7 @@ table {
 .greeting_subtitle {
   background: white;
   color: #004085;
+  margin: 50px;
 }
 
 .greeting_footer {
@@ -368,15 +368,15 @@ table {
 @media (min-width: 768px) {
   .greeting_contents {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
-
-
   .greeting_content p {
     text-align: left;
   }
 
   .greeting_title1 {
     text-align: left;
+    margin-bottom: 40px;
   }
   .greeting_footer {
     padding: 20px 20px 20px 40px;
@@ -388,15 +388,13 @@ table {
 @media screen and (max-width: 1080px) {
   .greeting_subtitle {
     grid-template-columns: 1fr;
-    padding-bottom: 40px;
+    margin: 30px;
   }
 
 }
 
 @media screen and (max-width: 786px) {
-  .greeting {
-    margin-top: 50px;
-  }
+
   .greeting_buttons {
     gap: 8px;
   }
@@ -412,7 +410,7 @@ table {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 160px;
   align-items: flex-start;
   border-top: 1px solid #ffffff80;
   padding: 32px clamp(16px, 5vw, 120px);
@@ -429,7 +427,7 @@ table {
 .footer_contacts {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
   gap: 8px;
   background-color: rgba(255, 250, 250, 0.5);
   padding: 25px;
@@ -481,6 +479,7 @@ opacity: 1;
   .footer {
     justify-content: flex-start;
     flex-wrap: wrap-reverse;
+    gap: 32px;
   }
   .footer_contacts {
     gap: 8px;
@@ -894,8 +893,8 @@ opacity: 1;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    align-items: center;
-    min-height: 100vh;
+    padding: 30px;
+    padding-bottom: 0;
   }
 
 .advantages_item {
@@ -944,7 +943,6 @@ opacity: 1;
       align-items: center;
       justify-content: center;
       gap: 20px;
-      padding: 20px;
     }
 
 .advantages_item-text {
@@ -991,7 +989,10 @@ opacity: 1;
 /* Адаптация для компьютеров */
 
 @media (min-width: 768px) {
-
+      .advantages {
+        padding: 50px;
+        padding-bottom: 0;
+      }
       .advantages_content {
         flex-direction: row;
         gap: 40px;
@@ -1022,6 +1023,11 @@ opacity: 1;
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    padding: 30px;
+    background-image: url('./background_banner-BeCnMIc1.png');  
+    background-size: cover; /* Заполняет весь блок, сохраняя пропорции */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
   }
 
 .section_cultor-title {
@@ -1032,7 +1038,6 @@ opacity: 1;
   }
 
 .section_cultor-text {
-    color: #004085;
     background-color: rgba(255, 250, 250, 0.3);
     padding: 20px; 
     border-radius: 20px; 
@@ -1044,7 +1049,8 @@ opacity: 1;
 
 @media (min-width: 768px) {
     .section_cultor {
-      gap: 60px; 
+      gap: 60px;
+      padding: 50px;
     }
   
     .section_cultor-text {
@@ -1057,8 +1063,9 @@ opacity: 1;
 .section_grade {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
-    gap: 40px;
+    padding: 30px;
+    padding-bottom: 0;
+    gap: 20px;
 }
 
 .section_grade-title {
@@ -1176,7 +1183,9 @@ opacity: 1;
       gap: 12px;
     }
     .section_grade {
-        padding-bottom: 150px;
+      padding: 50px;
+      padding-bottom: 0;
+      gap: 20px;
     }
   }
 
@@ -1227,15 +1236,21 @@ opacity: 1;
 }
 
 .section_slider {
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
 }
 
 .slider {
     position: relative;
     overflow: hidden;
+}
+
+.slider_title {
+    font-size: clamp(1.5em, 5vw, 3.5em); 
+    font-weight: 600;
+    color: #004085;
+    text-align: start;
 }
 
 .slides {
@@ -1264,12 +1279,10 @@ opacity: 1;
 }
 
 .controls {
-    /* position: absolute; */
     display: flex;
     height: 10px;
     justify-content: space-between;
     color: #004085;
-    /* transform: translateY(-100%); */
 }
 
 .controls label {
@@ -1379,7 +1392,7 @@ input[type="radio"] {
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
-      .section_slider {
+    .section_slider {
         padding: 50px;
       }
     .slider2 {

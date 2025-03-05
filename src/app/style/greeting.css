@@ -3,7 +3,7 @@
   background-size: cover; /* Заполняет весь блок, сохраняя пропорции */
   background-position: center; /* Центрирует изображение */
   background-repeat: no-repeat; /* Запрещает повторение изображения */
-  padding: 20px; /* Добавляем отступы для мобильных устройств */
+  /* padding: 20px; Добавляем отступы для мобильных устройств */
 }
 
 .greeting {
@@ -40,7 +40,7 @@
 }
 
 .greeting_title-title {
-  font-size: clamp(32px, 5vw, 4em);
+  font-size: clamp(32px, 5vw, 3.5em);
   font-weight: 600;
   color: var(--color-white);
 }
@@ -117,9 +117,9 @@
   .left-align {
     text-align: left;
   }
-.right-align {
-  text-align: right;
-}
+  .right-align {
+    text-align: right;
+  }
   .greeting_item {
     flex-direction: row;
     gap: 30px;
@@ -145,14 +145,14 @@
   font-size: clamp(1.5em, 5vw, 3.5em); 
   font-weight: 600;
   color: #004085;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: start;
 }
 
 .greeting_contents {
   display: grid;
   grid-template-columns: repeat(1, 1fr); 
-  gap: 40px;
+  gap: 20px;
 
 }
 .greeting_content {
@@ -169,6 +169,7 @@
 .greeting_subtitle {
   background: white;
   color: #004085;
+  margin: 50px;
 }
 
 .greeting_footer {
@@ -185,15 +186,15 @@
 @media (min-width: 768px) {
   .greeting_contents {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
-
-
   .greeting_content p {
     text-align: left;
   }
 
   .greeting_title1 {
     text-align: left;
+    margin-bottom: 40px;
   }
   .greeting_footer {
     padding: 20px 20px 20px 40px;
@@ -205,15 +206,13 @@
 @media screen and (max-width: 1080px) {
   .greeting_subtitle {
     grid-template-columns: 1fr;
-    padding-bottom: 40px;
+    margin: 30px;
   }
 
 }
 
 @media screen and (max-width: 786px) {
-  .greeting {
-    margin-top: 50px;
-  }
+
   .greeting_buttons {
     gap: 8px;
   }

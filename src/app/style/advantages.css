@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    align-items: center;
-    min-height: 100vh;
+    padding: 30px;
+    padding-bottom: 0;
   }
   .advantages_item {
     border: 1px solid #fe722b;
@@ -57,7 +57,6 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
-      padding: 20px;
     }
     .advantages_item-text {
       font-size: 20px;
@@ -101,7 +100,10 @@
     
     /* Адаптация для компьютеров */
     @media (min-width: 768px) {
-
+      .advantages {
+        padding: 50px;
+        padding-bottom: 0;
+      }
       .advantages_content {
         flex-direction: row;
         gap: 40px;

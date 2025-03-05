@@ -1,15 +1,19 @@
 .section_slider {
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
 }
 
 .slider {
     position: relative;
     overflow: hidden;
 }
-
+.slider_title {
+    font-size: clamp(1.5em, 5vw, 3.5em); 
+    font-weight: 600;
+    color: #004085;
+    text-align: start;
+}
 .slides {
     display: flex;
     width: 500%;
@@ -35,12 +39,10 @@
 
 
 .controls {
-    /* position: absolute; */
     display: flex;
     height: 10px;
     justify-content: space-between;
     color: #004085;
-    /* transform: translateY(-100%); */
 }
 .controls label {
     cursor: pointer;
@@ -145,7 +147,7 @@ input[type="radio"] {
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
-      .section_slider {
+    .section_slider {
         padding: 50px;
       }
     .slider2 {

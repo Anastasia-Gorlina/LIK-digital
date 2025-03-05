@@ -144,7 +144,7 @@ class AccordionItem extends HTMLElement {
 }
 function constructMail(formData) {
   const subject = "Запрос на дополнительную консультацию с лендинга ЛиК";
-  const email = "example@example.com";
+  const email = "kulturaPB@gazprom-neft.ru";
   const body = `
     ФИО: ${formData.fio.value}%0D%0A
     Организация: ${formData.company.value}%0D%0A
