@@ -893,12 +893,14 @@ opacity: 1;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 40px;
+    align-items: center;
     min-height: 100vh;
   }
 
 .advantages_item {
-    border: 2px solid #fe722b;
+    border: 1px solid #fe722b;
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
     color: #333;
@@ -921,16 +923,18 @@ opacity: 1;
   }
 
 .advantages_group {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
   }
 
 .advantages_title {
       font-size: clamp(2em, 5vw, 3.5em);
       font-weight: 600;
       color: #004085;
-      margin-bottom: 40px;
-      margin-left: 40px;
+      /* margin-bottom: 40px;
+      margin-left: 40px; */
       text-align: left;
     }
 
@@ -987,6 +991,7 @@ opacity: 1;
 /* Адаптация для компьютеров */
 
 @media (min-width: 768px) {
+
       .advantages_content {
         flex-direction: row;
         gap: 40px;
@@ -997,14 +1002,14 @@ opacity: 1;
       }
 
       .advantages_item {
-        padding: 20px 100px 20px 187px;
+        padding: 20px 40px;
       }
       .advantages_img {
           max-width: 400px;
         padding: 50px;
       }
       .advantages_group {
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
       }
       .advantages_list {
         padding-left: 30px;
@@ -1093,6 +1098,7 @@ opacity: 1;
     font-size: clamp(1em, 3vw, 2em); 
     gap: 4px;
     font-weight: 500;
+    color: #fe722b;
     border: 2px solid #fe722b;
     border-radius: 20px;
     padding: 20px;

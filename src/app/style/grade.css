@@ -37,6 +37,7 @@
     font-size: clamp(1em, 3vw, 2em); 
     gap: 4px;
     font-weight: 500;
+    color: #fe722b;
     border: 2px solid #fe722b;
     border-radius: 20px;
     padding: 20px;
